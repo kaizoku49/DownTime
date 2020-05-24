@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home_fragment">
+
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.lokearouet.vuds.ui.HomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_home"
+        android:font ="@font/psm"/>
+
+    <fragment
+        android:id="@+id/downloads_fragment"
+        android:name="com.lokearouet.vuds.ui.DownloadsFragment"
+        android:label="Downloads"
+        android:font = "@font/psb"
+        tools:layout="@layout/fragment_downloads_list" />
+
+    <fragment
+        android:id="@+id/settings_fragment"
+        android:name="com.lokearouet.vuds.ui.SettingsFragment"
+        android:label="Settings"
+        android:font="@font/psb"/>
+
+    <fragment
+        android:id="@+id/youtube_dl_fragment"
+        android:name="com.lokearouet.vuds.ui.YoutubeDlFragment"
+        android:label="youtube-dl"
+        android:font ="@font/psb"/>
+</navigation>
