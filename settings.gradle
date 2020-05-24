@@ -1,2 +1,2 @@
-rootProject.name='dvd'
+rootProject.name='DownTime'
 include ':app'
